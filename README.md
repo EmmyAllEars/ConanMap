@@ -3,6 +3,8 @@ Aimee Jarboe
 
 https://twitter.com/ProbablyAimee
 
+![Conan Map demo](/images/conanMapDemo.jpg "demo")
+
 ++++++++++++++++++++++++++++++++
 
 Requirements:
