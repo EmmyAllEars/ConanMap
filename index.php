@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>NUTZ Conan Exiles Map</title>
+<title>Conan Exiles Map</title>
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 <script type="text/javascript">
@@ -66,7 +66,7 @@ $(document).ready(function() {
 			var googleMapOptions = 
 			{ 
 				center: new google.maps.LatLng(0, 0), // map center
-				zoom: 2, //zoom level, 0 = earth view to higher value
+				zoom: 3, //zoom level, 0 = earth view to higher value
 				maxZoom: 4,
 				minZoom: 0,
 				zoomControlOptions: {
@@ -199,7 +199,7 @@ $(document).ready(function() {
 			  data: myData,
 			  success:function(data){
 					Marker.setMap(null); 
-					alert(data);
+					location.reload(); //made page reload for now to deal with multicontributions
 				},
 				error:function (xhr, ajaxOptions, thrownError){
 					alert(thrownError); //throw any errors
@@ -224,6 +224,7 @@ $(document).ready(function() {
 				replaceWin.html(data); //replace info window with new html
 				Marker.setDraggable(false); //set marker to fixed
 				Marker.setIcon('http://---YOUR DOMAIN HERE---/images/icons/pin_blue.png'); //replace icon
+				location.reload(); //made page reload for now to deal with multicontributions
             },
             error:function (xhr, ajaxOptions, thrownError){
                 alert(thrownError); //throw any errors
@@ -254,11 +255,24 @@ div.marker-info-win p{padding: 0px;margin: 10px 0px 10px 0;}
 div.marker-inner-win{padding: 5px;}
 button.save-marker, button.remove-marker{border: none;background: rgba(0, 0, 0, 0);color: #00F;padding: 0px;text-decoration: underline;margin-right: 10px;cursor: pointer;
 }
+
+/* Other */
+.info {padding-left: 5%;}
 </style>
 </head>
 <body>             
-<h1 class="heading">NUTZ Map</h1>
+<h1 class="heading">Map</h1>
 <div align="center">Right Click to Drop a New Marker</div>
 <div id="google_map"></div>
+
+<div class="info">
+<h2>Legend</h2>
+<p><img src="http://104.131.108.108/t/icons/pin_camp.png" /> Camp </p>
+<p><img src="http://104.131.108.108/t/icons/pin_base.png" /> Base </p>
+<p><img src="http://104.131.108.108/t/icons/pin_resource.png" /> Resource </p>
+<p><img src="http://104.131.108.108/t/icons/pin_enemy.png" /> Enemy </p>
+<p><img src="http://104.131.108.108/t/icons/pin_landmark.png" /> Landmark </p>
+<p><img src="http://104.131.108.108/t/icons/pin_NPC.png" /> NPC Friendly</p>
+</div>
 </body>
 </html>
