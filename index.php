@@ -89,7 +89,7 @@ $(document).ready(function() {
 					  var address 	= '<p>'+ $(this).attr('address') +'</p>';
 					  var type 		= $(this).attr('type');
 					  var point 	= new google.maps.LatLng(parseFloat($(this).attr('lat')),parseFloat($(this).attr('lng')));
-					  create_marker(point, name, address, false, false, false, "http://--YOUR DOMAIN HERE--/images/icons/pin_blue.png");
+					  create_marker(point, name, address, false, false, false, "http://--YOUR DOMAIN HERE--/images/icons/pin_" + type +".png");
 				});
 			});	
 			
