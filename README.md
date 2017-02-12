@@ -3,7 +3,13 @@ Aimee Jarboe
 
 https://twitter.com/ProbablyAimee
 
-![Conan Map demo](/images/conanMapDemo.jpg "demo")
+![Conan Map example](https://camo.githubusercontent.com/a93fd7e582ae1a1746aec6b71ebce6f30424b6b6/687474703a2f2f692e696d6775722e636f6d2f656361346b63442e6a7067 "Conan Map example")
+
+++++++++++++++++++++++++++++++++
+
+The Collaborative Conan Map is intended to give clans a way to share ingame locations. Using Google Maps API and a zoomable version of the ingame map, players can place map markers by right-clicking the map. Markers can be dragged before they're saved, and deleted after. 
+
+Custom icons for the different types of markers are: Camp (campfire icon), Enemy (Darfari mask), NPC Friendly (Leather Journal), Base (Stygian flag), Resource (mining pick), and Landmark (torch). To change the icons on your map, upload desired graphic with the name scheme `"pin_" + type + ".png"` to `/images/icons/` (example: the Camp type icon is `pin_camp.png`). See current icons if you need help with naming.  
 
 ++++++++++++++++++++++++++++++++
 
