@@ -1,7 +1,4 @@
 # Collaborative Conan Map
-Aimee Jarboe
-
-https://twitter.com/ProbablyAimee
 
 ![Conan Map example](https://camo.githubusercontent.com/a93fd7e582ae1a1746aec6b71ebce6f30424b6b6/687474703a2f2f692e696d6775722e636f6d2f656361346b63442e6a7067 "Conan Map example")
 
